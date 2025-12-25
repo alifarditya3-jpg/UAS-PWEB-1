@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #555;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(120deg, #e0e0e0, #ffffff);
+}
+
+.hero span {
+    color: #555;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #555;
+}
+
+/* Section */
+section {
+    padding: 70px 100px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Skill */
+.skill-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Media */
+.video iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+}
+
+/* Social */
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border-radius: 20px;
+}
+
+.social a:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #ffffff;
+}
+/* Profil */
+.profil-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profil-img img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.profil-info {
+    max-width: 400px;
+}
+
+.profil-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profil-info p {
+    margin-bottom: 8px;
+}
+
+.profil-info ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.profil-info li {
+    margin-bottom: 6px;
+}
+/* Media */
+.media {
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.media-desc {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.media-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.media-card:hover {
+    transform: translateY(-5px);
+}
+
+.media-card iframe {
+    width: 100%;
+    height: 180px;
+    border: none;
+}
+
+.media-card p {
+    padding: 12px;
+    font-weight: 500;
+}
+
+/* FAQ */
+.faq {
+    background: #ffffff;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: auto;
+}
+
+.faq-item {
+    background: #f5f5f5;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+}
+
+.faq-item h4 {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.faq-item p {
+    color: #555;
+    line-height: 1.6;
+}
+/* FAQ Accordion */
+.faq {
+    background: #ffffff;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: auto;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 18px 22px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question span {
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #ffffff;
+}
+
+.faq-answer p {
+    padding: 15px 22px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Aktif */
+.faq-item.active .faq-answer {
+    max-height: 200px;
+}
+
+.faq-item.active .faq-question span {
+    transform: rotate(45deg);
+}

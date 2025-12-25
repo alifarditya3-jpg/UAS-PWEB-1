@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Alif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2 class="logo">MyPorto</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#about">Info</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <h1>Halo, Saya <span>Alif</span></h1>
+        <p>Pelajar | Pemula Web Developer | Gen Z 🚀</p>
+        <button onclick="scrollToSection('profil')">Lihat Profil</button>
+    </section>
+
+    <!-- Profil -->
+    <section id="profil" class="profil">
+    <h2>Profil Saya</h2>
+
+    <div class="profil-container">
+        <div class="profil-img">
+            <img src="foto profil.jpg" alt="Foto Profil">
+        </div>
+
+        <div class="profil-info">
+            <h3>Alif Arditya s.</h3>
+            <p><strong>Program Studi:</strong> Sistem Informasi</p>
+            <p><strong>Kampus:</strong> universitas pamulang</p>
+            
+        </div>
+    </div>
+</section>
+
+
+    <!-- Skill -->
+    <section id="skill">
+        <h2>Skill</h2>
+        <div class="skill-box">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Microsoft Word</div>
+            <div class="card">Microsoft Excel</div>
+        </div>
+    </section>
+
+    <!-- Media -->
+<section id="media" class="media">
+    <h2>Media Pembelajaran</h2>
+    <p class="media-desc">Video pilihan yang saya gunakan untuk belajar web development</p>
+
+    <div class="media-grid">
+        <div class="media-card">
+            <iframe src="https://www.youtube.com/embed/AHLt6eXyVQk?si=u5cnyfjF-dLIJa5M" allowfullscreen></iframe>
+            <p>tips coding untuk pemula</p>
+        </div>
+
+        <div class="media-card">
+            <iframe src="https://www.youtube.com/embed/71a2zeC71gk?si=TK4QkQOwffIJjB7J" allowfullscreen></iframe>
+            <p>belajar membuat website</p>
+        </div>
+
+        <div class="media-card">
+            <iframe src="https://www.youtube.com/embed/0oA1Z6UKM5M?si=BxPQ_66tK23ibhyH" allowfullscreen></iframe>
+            <p>belajar html untuk pemula</p>
+        </div>
+
+        <div class="media-card">
+            <iframe src="https://www.youtube.com/embed/V-DD30lGAL0?si=XkGdN-Q7auZnhvzI" allowfullscreen></iframe>
+            <p>pembelajaran CSS</p>
+        </div>
+
+        <div class="media-card">
+            <iframe src="https://www.youtube.com/embed/L7jneRWa1nE?si=CtE3kSPX1-JhiC9R" allowfullscreen></iframe>
+            <p>memahami properti css</p>
+        </div>
+
+        <div class="media-card">
+            <iframe src="https://www.youtube.com/embed/N-s_R77-JQI?si=Rbm0bBhrUg0F8Tae" allowfullscreen></iframe>
+            <p>rahasia css border-radius</p>
+        </div>
+
+        <div class="media-card">
+            <iframe src="https://www.youtube.com/embed/4WA-uZzxDBA?si=lwPG9XqTDP3YuAbh" allowfullscreen></iframe>
+            <p>rahasia css overlow</p>
+        </div>
+
+        <div class="media-card">
+            <iframe src="https://www.youtube.com/embed/vElHclDyR7w?si=mcLYXQZgnje5qHUR" allowfullscreen></iframe>
+            <p>cara mudah membuat halaman login css</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Info Website -->
+    <section id="about" class="faq">
+    <h2>Pertanyaan Umum</h2>
+
+    <div class="faq-list">
+
+        <div class="faq-item">
+            <button class="faq-question">
+                ❓ Siapa yang membuat website ini?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    Website ini dibuat oleh <strong>Alif Arditya</strong> sebagai portofolio
+                    dan media belajar web development menggunakan HTML, CSS, dan JavaScript.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                ❓ Apa tujuan dibuatnya website ini?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    Website ini bertujuan untuk menampilkan profil, skill, serta proses
+                    belajar saya di bidang pengembangan website.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                ❓ Apa keahlian yang dimiliki?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    Saya memiliki kemampuan dasar HTML, CSS, JavaScript, serta pengolahan
+                    data menggunakan Microsoft Word dan Excel.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                ❓ Apakah website ini akan dikembangkan lagi?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    Ya, website ini akan terus dikembangkan dengan fitur baru seperti
+                    dark mode, animasi, dan peningkatan tampilan.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Kontak -->
+    <section id="contact">
+        <h2>Kontak & Media Sosial</h2>
+        <div class="social">
+            <a href="https://www.instagram.com/alifarditya_?igsh=MTg4b2lkZHI4cmx1">Instagram</a>
+            <a href="https://github.com/alifarditya3-jpg">GitHub</a>
+            <a href="mailto:alifarditya38@gmail.com">Email</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Portofolio Alif</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
